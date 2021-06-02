@@ -1,0 +1,150 @@
+
+.bb{
+  height: 45rem;
+}
+.card-title{
+    text-align: center;  
+}
+.log{
+  margin-left: 88rem;
+  margin-right: 16%;
+  cursor: pointer;
+  position: relative;
+  top: 1rem;
+}
+.sig{
+  cursor: pointer;
+  float:right;
+  margin-right: 18rem;
+
+}
+.font{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 8rem;
+    color: white;
+    padding-left: 31rem;
+    padding-top: 6rem;
+}
+.dis{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 9rem;
+    color: white;
+    font-size: 3rem;
+}
+.button{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 3rem;
+    margin-left: 50rem;
+    color: white;
+    font-size: 2rem;
+    padding: 7.1px;
+    width: 14rem;
+}
+
+.maincard{
+padding-left: 15rem;
+}
+  
+  .example-header-image{
+    background-image: url('../../assets/man.png');
+    background-size: cover;
+  }
+  mat-form-field{
+      padding: 30px;
+     width: 30rem;
+  }
+  .biryani{
+    height: 254px;
+  }
+  .side{
+    width: 70%;
+    height: 6px;
+    background-color: #2196F3;
+    }
+    .bar-container{
+        width: 55%;
+        background-color: #f1f1f1;
+        text-align: center;
+        color: white;
+    }
+    .war{
+       margin-left: 142px;
+    }
+   
+
+
+
+
+.example{
+    margin-left: 45rem;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 30%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 7%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.latter{
+  letter-spacing: 5px;
+  font-size: 48px;
+  padding-left: 36rem;
+}
+
+
+.box:hover {
+  -webkit-transform: rotate(360deg);
+  
+  border-radius: 50%;
+}
+
+.rotate {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.rotate:hover {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+/**forgot**/
+.forgot{
+  cursor: pointer;
+}
+
+
+    
+  

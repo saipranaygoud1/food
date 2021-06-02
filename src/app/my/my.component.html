@@ -1,0 +1,49 @@
+<div class="center">
+<h1 id="date">hii</h1>
+<button (click)="str()">click</button>
+<h1>{{myObj.name}}</h1>
+<h1>{{myObj.city}}</h1>
+<div *ngIf = "read; else elsepart">display if part</div>
+<ng-template #elsepart>display else part</ng-template>
+
+<div [ngSwitch]="SwitchValue">
+|<div *ngSwitchCase="1">hi this pranay</div>
+<div *ngSwitchCase="2">hi this apoorva</div>
+<div *ngSwitchCase="3">hi this teju</div>
+<div *ngSwitchCase="4">hi this sunny</div>
+<div *ngSwitchDefault>one to four</div>
+</div>
+
+<table [ngStyle]="{'border':'1px solid','color':'green'}">
+    <tr>
+        <th>Sno</th>
+        <th>name</th>
+        <th>age</th>
+    </tr>
+    <tr *ngFor="let user of std">
+        <td>{{user.sno}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+    </tr>
+</table>
+
+
+<div>
+    {{emp.firstname | lowercase }} {{emp.lastname | uppercase}}
+</div>
+<div>
+    {{emp.dob | date: 'MMMM dd yyyy'}}
+</div>
+<div>
+    {{emp.salary | currency : 'INR': 'code'}}
+</div>
+<div>
+    {{emp | json}}
+</div>
+
+<button (click)="decrement()">subtract</button>
+<button (click)="increment()">addition</button>
+<app-you [myNewNumber]="counter"[myNumber2]="name"></app-you>
+<a (click)="updatevalue()">update</a>
+
+</div>

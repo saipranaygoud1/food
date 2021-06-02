@@ -1,0 +1,265 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+
+
+
+
+
+
+<!-- Login Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="staticBackdropLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">  
+    <div class="card-body">
+       <form>
+           <div class="form-group">
+               <label>Username / Email</label>
+               <input type="text" id="txtUsername" class="form-control">
+           </div>
+           <div class="form-group">
+               <label>Password</label>
+               <input type="password" id="txtPassword" class="form-control">
+           </div>
+           <button type="submit" class="btn btn-primary mt-4"><a routerLink="/login">Login</a></button>
+           
+           <div class="form-group forgot pt-3"type="button"><a routerLink="/forgotpass">Forgot Password?</a></div>
+  
+
+
+           <div class="form-divider" style="border-top:1px solid #e6e6e6"></div>
+           <div class="form-group pt-4">New to My style foodie's ? <a href="#">Create Account</a></div>
+       </form>
+    </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<!-- signup Modal -->
+<div class="modal fade" id="static" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="static" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="static">signup</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+        <div class="card-body">
+          <div>
+              <div class="form-group">
+                  <label>Username</label>
+                  <input type="text" id="txtUsername" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label>Email</label>
+                  <input type="text" id="txtEmail" autocomplete="off" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label>Phone</label>
+                  <input type="text" id="txtPhone" autocomplete="off" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" id="txtPassword" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label>Confirm Password</label>
+                  <input type="password" id="txtConfirmPassword" class="form-control">
+              </div>
+              
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">I agree to My style foodie's Terms of Service, Privacy Policy and Content Policies</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign up</button>
+              <div class="form-group pt-3">
+                  <label>Already have an account? <a routerLink="/login">Login</a></label>
+              </div>
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="card bg-dark text-white">
+    <img  src="../../assets/bir.jpg" class="bb card-img" alt="...">
+    <div class="card-img-overlay">
+      <div class="mt-3 login">
+
+        <!-- Login Button trigger modal -->
+        <span class="log" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+         Login
+        </span>
+        <!--Signup Button trigger modal -->
+        <span class="sig" data-bs-toggle="modal" data-bs-target="#static">
+          signup
+         </span>
+      </div>
+     <h1 class="card-text font ">My Style foodie's </h1> 
+     <h3 class="card-text dis ">Discover the best food & drinks in hyderabad </h3>
+
+     <form class="example mt-5" action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+     
+     <button type="button" class="button btn btn-warning btn-lg ">Order Now</button>
+     
+    </div>
+  </div>
+
+
+  <mat-card class="maincard">
+    <mat-card-title class="latter firstCard ">Restaurants</mat-card-title>
+    <mat-card-content class="content">
+        <mat-form-field >
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Bawarchi</mat-card-title>
+            <mat-card-subtitle>Dish</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="../../assets/dish.jpeg" class="box rotate"alt="Photo of a Shiba Inu">
+          <mat-card-content>
+           
+           <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+           </span>
+           <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+           </span>
+           <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+           </span>
+           <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+           </span>
+           <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+           </span>
+           <mat-card-subtitle class="mt-2">4.0 avarage based on 2k reviews</mat-card-subtitle>
+           <div class="bar-container">
+            <div class="side">
+            </div>
+           </div>
+          
+          </mat-card-content>
+         <button type="button" class="war btn btn-warning btn-lg mt-3">Order now</button>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Mehfil</mat-card-title>
+            <mat-card-subtitle>Tastey</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="../../assets/yummy.jpeg" class="box rotate"alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+             </span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+             </span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+             </span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+             </span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+             </span>
+             <mat-card-subtitle class="mt-2">3.9 avarage based on 1200 reviews</mat-card-subtitle>
+             <div class="bar-container">
+              <div class="side">
+              </div>
+             </div>
+          </mat-card-content>
+          <button type="button" class="war btn btn-warning btn-lg mt-3">Order now</button>
+
+        </mat-form-field>
+        <mat-form-field>
+         
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Paradise</mat-card-title>
+            <mat-card-subtitle>Biryani</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="../../assets/biryani.jpg" class="biryani box rotate"alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+             </span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+             </span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+             </span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+             </span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+             </span>
+             <mat-card-subtitle class="mt-2">4.4 avarage based on 12k reviews</mat-card-subtitle>
+             <div class="bar-container">
+              <div class="side">
+              </div>
+             </div>
+            
+          </mat-card-content>
+          <button type="button" class="war btn btn-warning btn-lg mt-3">Order now</button>
+        </mat-form-field>
+       
+       
+        
+    </mat-card-content>
+  </mat-card>
